@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping Cart - Mehr Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header"></div>
+
+<main>
+
+<section class="hero">
+    <h1>Your Shopping Cart</h1>
+    <p>Review your selected items</p>
+</section>
+
+<section class="products">
+
+    <h2>Cart Items</h2>
+
+    <!-- CART ITEMS -->
+    <div id="cart-items">
+        <p>No items in cart yet.</p>
+    </div>
+
+    <!-- TOTAL -->
+    <div class="cart-total">
+        <h3>Total Price: $<span id="total">0</span></h3>
+    </div>
+
+    <!-- ACTION BUTTONS -->
+    <div class="cart-actions">
+        <button onclick="clearCart()">Clear Cart</button>
+        <button onclick="payNow()">Pay Now</button>
+    </div>
+
+</section>
+
+</main>
+
+<!-- IMAGE MODAL (VALIDATOR SAFE) -->
+<div id="image-modal" class="image-modal" onclick="closeImage()">
+    <img id="modal-img" src="images/logo2.png" alt="Zoomed product image">
+</div>
+
+<!-- FOOTER -->
+<div id="footer"></div>
+
+<script src="scripts/include.js"></script>
+<script src="scripts/scripts.js"></script>
+<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<main>
+
+<section class="hero">
+    <h1>Shop Our Collection</h1>
+    <p>Explore our latest designs</p>
+</section>
+
+<section class="products">
+    <h2>Our Collection</h2>
+
+    <div class="layout">
+
+        <!-- OUTFIT 1 -->
+        <div class="card">
+            <img src="images/outfit1.jpg" alt="Indian Salwar Kameez" onclick="openImage(this.src)">
+            <h3>Indian Salwar Kameez</h3>
+            <p>$140</p>
+
+            <label for="size-outfit1">Size:</label>
+            <select id="size-outfit1">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+
+            <button onclick="addToCart('Indian Salwar Kameez', 140, 'images/outfit1.jpg', 'outfit1')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- OUTFIT 2 -->
+        <div class="card">
+            <img src="images/outfit2.jpg" alt="Lehenga" onclick="openImage(this.src)">
+            <h3>Lehenga</h3>
+            <p>$150</p>
+
+            <label for="size-outfit2">Size:</label>
+            <select id="size-outfit2">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+
+            <button onclick="addToCart('Lehenga', 150, 'images/outfit2.jpg', 'outfit2')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- OUTFIT 3 -->
+        <div class="card">
+            <img src="images/outfit3.jpg" alt="Modern Ethnic Outfit" onclick="openImage(this.src)">
+            <h3>Modern Ethnic Outfit</h3>
+            <p>$120</p>
+
+            <label for="size-outfit3">Size:</label>
+            <select id="size-outfit3">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+
+            <button onclick="addToCart('Modern Ethnic Outfit', 120, 'images/outfit3.jpg', 'outfit3')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- OUTFIT 4 -->
+        <div class="card">
+            <img src="images/outfit4.jpg" alt="Royal Scarlet Anarkali" onclick="openImage(this.src)">
+            <h3>Royal Scarlet Anarkali</h3>
+            <p>$110</p>
+
+            <label for="size-outfit4">Size:</label>
+            <select id="size-outfit4">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+
+            <button onclick="addToCart('Royal Scarlet Anarkali', 110, 'images/outfit4.jpg', 'outfit4')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- OUTFIT 5 -->
+        <div class="card">
+            <img src="images/outfit5.jpg" alt="Maroon Anarkali" onclick="openImage(this.src)">
+            <h3>Maroon Anarkali</h3>
+            <p>$140</p>
+
+            <label for="size-outfit5">Size:</label>
+            <select id="size-outfit5">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+
+            <button onclick="addToCart('Maroon Anarkali', 140, 'images/outfit5.jpg', 'outfit5')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- OUTFIT 6 -->
+        <div class="card">
+            <img src="images/outfit6.jpg" alt="Lavender Suit" onclick="openImage(this.src)">
+            <h3>Lavender Suit</h3>
+            <p>$120</p>
+
+            <label for="size-outfit6">Size:</label>
+            <select id="size-outfit6">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+
+            <button onclick="addToCart('Lavender Suit', 120, 'images/outfit6.jpg', 'outfit6')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- OUTFIT 7 -->
+        <div class="card">
+            <img src="images/outfit7.jpg" alt="Anarkali Suit" onclick="openImage(this.src)">
+            <h3>Anarkali Suit</h3>
+            <p>$130</p>
+
+            <label for="size-outfit7">Size:</label>
+            <select id="size-outfit7">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+
+            <button onclick="addToCart('Anarkali Suit', 130, 'images/outfit7.jpg', 'outfit7')">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- OUTFIT 8 -->
+        <div class="card">
+            <img src="images/outfit8.png" alt="Traditional Lehenga" onclick="openImage(this.src)">
+            <h3>Traditional Lehenga</h3>
+            <p>$140</p>
+
+            <label for="size-outfit8">Size:</label>
+            <select id="size-outfit8">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+
+            <button onclick="addToCart('Traditional Lehenga', 140, 'images/outfit8.png', 'outfit8')">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- IMAGE MODAL -->
+<div id="image-modal" class="image-modal" onclick="closeImage()">
+    <img id="modal-img" src="images/logo2.png" alt="Zoomed product image">
+</div>
+
+<div id="footer"></div>
+
+<script src="scripts/include.js"></script>
+<script src="scripts/scripts.js"></script>
+<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
